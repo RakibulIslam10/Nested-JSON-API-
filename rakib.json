@@ -1,0 +1,187 @@
+{
+  "status": true,
+  "message": "Data fetched successfully",
+  "timestamp": "2025-07-06T19:00:00Z",
+  "data": {
+    "platform": {
+      "name": "MegaMall",
+      "version": "3.2.0",
+      "maintenance_mode": false,
+      "currencies": {
+        "default": "USD",
+        "available": ["USD", "EUR", "BDT"],
+        "exchange_rates": {
+          "USD": 1.0,
+          "EUR": 0.91,
+          "BDT": 117.8
+        }
+      }
+    },
+    "user": {
+      "id": 10234,
+      "role": "buyer",
+      "profile": {
+        "name": "Rakib Hossain",
+        "email": "rakib@example.com",
+        "phone": "+8801770000000",
+        "addresses": [
+          {
+            "type": "home",
+            "location": {
+              "line1": "123/A Gulshan Avenue",
+              "city": "Dhaka",
+              "division": "Dhaka",
+              "postal_code": "1212",
+              "geo": {
+                "lat": 23.7808875,
+                "lng": 90.2792371
+              }
+            },
+            "is_default": true
+          },
+          {
+            "type": "office",
+            "location": {
+              "line1": "Level 5, Bashundhara Tower",
+              "city": "Dhaka",
+              "division": "Dhaka",
+              "postal_code": "1229",
+              "geo": {
+                "lat": 23.814165,
+                "lng": 90.428371
+              }
+            },
+            "is_default": false
+          }
+        ]
+      },
+      "wallet": {
+        "balance": 150.75,
+        "transactions": [
+          {
+            "id": "TXN1001",
+            "type": "credit",
+            "amount": 200,
+            "currency": "USD",
+            "created_at": "2025-06-15T14:22:00Z",
+            "note": "Referral bonus"
+          },
+          {
+            "id": "TXN1002",
+            "type": "debit",
+            "amount": 49.25,
+            "currency": "USD",
+            "created_at": "2025-06-20T18:00:00Z",
+            "note": "Order #ORD98234"
+          }
+        ]
+      }
+    },
+    "vendors": [
+      {
+        "id": 501,
+        "name": "TechHub Ltd.",
+        "status": "active",
+        "rating": 4.6,
+        "products": [
+          {
+            "id": 9001,
+            "name": "Smartphone X Pro",
+            "category": {
+              "id": 100,
+              "name": "Mobiles",
+              "parent": {
+                "id": 1,
+                "name": "Electronics"
+              }
+            },
+            "specs": {
+              "storage": "128GB",
+              "ram": "8GB",
+              "battery": "4500mAh",
+              "os": {
+                "name": "Android",
+                "version": "13.0"
+              },
+              "colors": ["Black", "Blue", "White"]
+            },
+            "price": {
+              "original": 699.99,
+              "discount": 10,
+              "final": 629.99,
+              "currency": "USD"
+            },
+            "availability": {
+              "stock": 120,
+              "delivery": {
+                "available": true,
+                "estimated_days": 3
+              }
+            },
+            "reviews": {
+              "total": 250,
+              "average_rating": 4.3,
+              "top_reviews": [
+                {
+                  "user_id": 343,
+                  "rating": 5,
+                  "comment": "Amazing phone with great battery life!",
+                  "created_at": "2025-06-25T10:10:00Z"
+                },
+                {
+                  "user_id": 344,
+                  "rating": 4,
+                  "comment": "Good but camera needs improvement.",
+                  "created_at": "2025-06-26T12:00:00Z"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "orders": [
+      {
+        "order_id": "ORD98234",
+        "date": "2025-06-20T17:45:00Z",
+        "total_amount": 49.25,
+        "currency": "USD",
+        "status": "delivered",
+        "payment": {
+          "method": "wallet",
+          "paid": true,
+          "payment_id": "PMT65432",
+          "timestamp": "2025-06-20T18:00:00Z"
+        },
+        "items": [
+          {
+            "product_id": 9001,
+            "name": "Smartphone X Pro",
+            "quantity": 1,
+            "unit_price": 49.25,
+            "vendor_id": 501,
+            "delivery_status": "delivered",
+            "tracking": {
+              "courier": "Pathao",
+              "tracking_id": "PTHX123456",
+              "history": [
+                {
+                  "status": "shipped",
+                  "timestamp": "2025-06-21T09:00:00Z"
+                },
+                {
+                  "status": "in transit",
+                  "timestamp": "2025-06-22T14:00:00Z"
+                },
+                {
+                  "status": "delivered",
+                  "timestamp": "2025-06-23T11:30:00Z"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
