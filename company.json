@@ -1,0 +1,41 @@
+{
+  "departments": [
+    {
+      "name": "Engineering",
+      "teams": [
+        {
+          "teamName": "Backend",
+          "members": [
+            {"id": 1, "name": "Alice", "skills": ["Dart", "Go"]},
+            {"id": 2, "name": "Bob", "skills": ["Python", "Node"]}
+          ],
+          "meta": {"lead": "Alice", "active": true}
+        },
+        {
+          "teamName": "Frontend",
+          "members": [
+            {"id": 3, "name": "Carol", "skills": ["Flutter", "React"]}
+          ],
+          "meta": {"lead": "Carol", "active": false}
+        }
+      ]
+    },
+    {
+      "name": "HR",
+      "teams": [
+        {
+          "teamName": "Recruitment",
+          "members": [
+            {"id": 4, "name": "Dave", "skills": ["Interviewing"]}
+          ],
+          "meta": {"lead": "Dave", "active": true}
+        }
+      ]
+    }
+  ],
+  "companyMeta": {
+    "founded": 2010,
+    "locations": ["NY", "London"],
+    "isHiring": true
+  }
+}
