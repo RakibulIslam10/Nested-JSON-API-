@@ -1,0 +1,76 @@
+{
+  "continents": [
+    {
+      "code": "NA",
+      "name": "North America",
+      "countries": [
+        {
+          "code": "US",
+          "name": "United States",
+          "states": [
+            {
+              "code": "CA",
+              "name": "California",
+              "cities": [
+                {"name": "Los Angeles", "population": 4000000, "landmarks": ["Hollywood", "Venice Beach"]},
+                {"name": "San Francisco", "population": 870000, "landmarks": ["Golden Gate", "Alcatraz"]}
+              ]
+            },
+            {
+              "code": "NY",
+              "name": "New York",
+              "cities": [
+                {"name": "New York City", "population": 8500000, "landmarks": ["Statue of Liberty", "Central Park"]}
+              ]
+            }
+          ],
+          "languages": ["English", "Spanish"]
+        },
+        {
+          "code": "CA",
+          "name": "Canada",
+          "provinces": [
+            {
+              "code": "ON",
+              "name": "Ontario",
+              "cities": [
+                {"name": "Toronto", "population": 2800000, "landmarks": ["CN Tower"]}
+              ]
+            }
+          ],
+          "languages": ["English", "French"]
+        }
+      ]
+    },
+    {
+      "code": "EU",
+      "name": "Europe",
+      "countries": [
+        {
+          "code": "DE",
+          "name": "Germany",
+          "states": [
+            {
+              "code": "BE",
+              "name": "Berlin",
+              "cities": [
+                {"name": "Berlin", "population": 3600000, "landmarks": ["Brandenburg Gate"]}
+              ]
+            }
+          ],
+          "languages": ["German"]
+        }
+      ]
+    }
+  ],
+  "currencies": [
+    {"code": "USD", "name": "US Dollar", "symbol": "$"},
+    {"code": "CAD", "name": "Canadian Dollar", "symbol": "C$"},
+    {"code": "EUR", "name": "Euro", "symbol": "€"}
+  ],
+  "settings": {
+    "defaultContinent": "NA",
+    "showPopulation": true,
+    "supportedLanguages": ["en", "fr", "de", "es"]
+  }
+}
